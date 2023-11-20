@@ -29,11 +29,14 @@ li{
     font-size: x-large;
     font-weight: 400;
     margin-bottom: 10px;
+    align-items: center;
 
 }
-li :hover{
-    background-color: red;
+li:hover{
+    color: white;
+    background-color: black;    
 }
+
 #spacer{
     height: 220px;
 }
