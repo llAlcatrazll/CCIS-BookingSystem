@@ -1,0 +1,39 @@
+#test{
+    background-color: red;
+    width:200px;
+    height: 200px;
+    color: black;
+}
+
+#sidebarbox{
+    width: 300px;
+    height: 760px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    border-color: black;
+    border-style: solid;
+    box-shadow: 2px 2px #2e2e2e;
+    align-content: center;
+    align-items: center;
+    
+}
+ul{
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0 0 0 0;
+    padding-left: 0;
+}
+
+li{
+    font-size: x-large;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+li :hover{
+    background-color: red;
+}
+#spacer{
+    height: 220px;
+}

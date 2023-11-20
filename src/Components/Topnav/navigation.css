@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+#testing{
+    width: 500px;
+    height: 300px;
+    background-color: red;
+}

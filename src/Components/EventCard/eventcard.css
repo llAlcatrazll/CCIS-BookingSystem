@@ -1,0 +1,59 @@
+#eventcardbox{
+    background-color: rgb(255, 255, 255);
+    width: 98%;
+    /* height: auto;  set it tto auto after layouting the inner*/
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    color: black;
+    padding: 2px 2px 2px 2px;
+}
+#test{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+#flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+#flex-container > div {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 540;
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    font-size: small ;
+    margin-right: 20px;
+  }
+  #evnentame-decor{
+    font-size: x-large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #imagesizing{
+    width: 20px;
+    height: 20px;
+  }
+  .imagearrangement{
+    align-content: center;
+    padding-top: 20px;
+    margin-top: 10px;
+    display: contents;
+    height: auto;
+    width: 10px;
+    display: flex;
+  }

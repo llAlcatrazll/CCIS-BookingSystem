@@ -1,0 +1,14 @@
+#background{
+    background-image: url("/src/assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 51%;
+    padding-top: 12%;
+    padding-right: 51%;
+    width: 1600px;
+    height: 777px;
+    /* color: red;
+    background-color: red; */
+    position: static;
+    z-index: 1;
+}
