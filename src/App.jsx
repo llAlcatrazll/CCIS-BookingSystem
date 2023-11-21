@@ -11,7 +11,7 @@ import Forgotpass from "./Components/Forgotpassword/ForgotPass"
 import Createaccount from "./Components/createaccount";
 import Landingpage from "./Pages/landingpage";
 import Dashboard from "./Components/Dashboard/Dashboard";
-
+import Sidebar from "./Components/Sidebar/Sidebar";
 const router = createBrowserRouter(
   createRoutesFromElements(
     // basic route
@@ -21,6 +21,7 @@ const router = createBrowserRouter(
       <Route path="/Createaccount" element={<Createaccount />}>  </Route>
       <Route path="/Landingpage" element={<Landingpage />}>  </Route>
       <Route path="/Dashboard" element={<Dashboard />}></Route>
+      <Route path="/Sidebar" element={<Sidebar />}></Route>
     </>
   )
   );

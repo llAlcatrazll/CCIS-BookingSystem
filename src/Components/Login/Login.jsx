@@ -21,7 +21,7 @@ export default function Login(){
        
        {/* log in button */}
                    <Link className="display-blocked" 
-                   to={'/Dashboard'}> 
+                   to={'/Sidebar'}> 
                     <button id="buttonwidth">Log In</button>
                    </Link>
        

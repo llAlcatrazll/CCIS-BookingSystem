@@ -9,6 +9,7 @@ import Eventcard from "../EventCard/Eventcard";
 import Createbooking from "../CreateBooking/Createbooking";
 
 
+import { useState } from "react";
 export default function Dashboard() {
     return(
         <>
@@ -18,7 +19,7 @@ export default function Dashboard() {
         <div id="leftdiv"> <Sidebar/> </div>
 
         <div id="rightdiv"> 
-         {/*
+{/*          
          this is for the eventcard schedules
 
          <Meetinglist>     
@@ -34,7 +35,7 @@ export default function Dashboard() {
        
          */}
         {/* <div id="mothercomponent"> */}
-{/* center component */}
+        {/* center component */}
             
             {/* <div id="thediv">
             

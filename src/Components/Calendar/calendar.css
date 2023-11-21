@@ -1,6 +1,24 @@
-#testing{
-    width: 200px;
-    height: 200px;
-    color: red;
-    background-color: red;
+#calendarbase{
+   
+        background: #f0f0f0;
+        /* width: 103%; */
+        width: 1290px;
+        height: 759px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        /* padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 15px; */
+        color: black;
+        text-overflow: clip;
+    
+}
+#spacer-calendar{
+        height: 10px;
+        width: 1100px;
+}
+#calendartemp{
+        width: 1250px;
+        height: 700px;
 }
