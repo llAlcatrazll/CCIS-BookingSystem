@@ -2,6 +2,7 @@
 
 #sidebarbox{
     width: 300px;
+    
     height: 760px;
     background-color: rgb(255, 255, 255);
     border-radius: 3px;
@@ -80,4 +81,9 @@ ul{
     padding-right: 10px;
     width: 125%;
     height: auto;
+}
+#asdaddfdf{
+    width: 100px;
+    height: 400px;
+    background-color: aqua;
 }

@@ -1,3 +1,12 @@
+#fullsizecalendar{
+        background: #f0f0f0;
+        width: 100%;
+        height: 760px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+    }
+
 #calendarbase{
    
         background: #f0f0f0;
@@ -15,10 +24,43 @@
     
 }
 #spacer-calendar{
-        height: 10px;
-        width: 1100px;
+        width: auto;
+        height: 100%;
+        background-color: red;
+        display: flex;
+        flex-direction: row;
 }
 #calendartemp{
-        width: 1250px;
+        /* width: 1250px; */
+        width: 100%;
         height: 700px;
+}
+.temporary{
+        width: 100%;
+        height: 730px;
+        background-color: blue;
+
+}
+#tempcalendar{
+        /* width: 1020px; */
+        width: 100%;
+}
+#calender-navigation{
+        width: 370px;
+        height: 100%;
+        background-color: aliceblue;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+}
+.section-sidenav{
+width: 100%;
+height: 100%;
+border-color: black;
+border-style: solid;
+border-width: 2px;
+}
+#tsdfsdfsdfsdf{
+        color: red;
+
 }

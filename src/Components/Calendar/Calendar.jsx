@@ -4,10 +4,16 @@ import "./calendar.css"
 export default function Calendar() {
     return(
         <>
-        <div id="fullsizeform">
-            Calendar things
+        <div id="fullsizecalendar">
             <div id="spacer-calendar">
-            <img id="calendartemp" src="/src/assets/calendartemp.png" alt="cannot render" />  
+                <div id="calender-navigation">
+                    <div className="section-sidenav"></div>
+                    <div className="section-sidenav"></div>
+                    <div className="section-sidenav"></div>
+                </div>
+                <div className="temporary">
+                    <div id="tempcalendar">temp calendar</div>
+                </div>
             </div>
         </div>
         </>

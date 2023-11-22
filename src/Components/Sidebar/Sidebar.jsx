@@ -3,30 +3,57 @@ import "./sidebar.css"
 import Calendar from "../Calendar/Calendar";
 import Meetinglist from "../Meetinglist/Meetinglist";
 import Createbooking from "../CreateBooking/Createbooking";
+import React, { useState, useEffect } from 'react';
 
+// function closeNav() {
+//   document.getElementById("mySidebar").style.width = "0";
+//   document.getElementById("main").style.marginLeft = "0";
+// }
 
-import { useState } from "react";
-
-
-
+function closeNavbar() {
+  var sidebar = document.getElementById("sidebarbox");
+  var currentWidth = sidebar.style.width;
+  // getting the current width fromt the css sheet
+  if (currentWidth === "300px") {
+    sidebar.style.width = "100px";
+  } else {
+    sidebar.style.width = "300px";
+  }
+}
+  
 export default function Sidebar() {
 
     //  Current Finished Pages
     //      MeetingList ~
     //      Createbooking /
 
+    // working in calendar page
+    const [sidenavWidth, setSidenavWidth] = useState("");
+
+    useEffect(() => {
+      const sidenav = document.getElementById("sidebarbox");
+      
+      if (sidenav) {
+        const width = window.getComputedStyle(sidenav).width;
+        setSidenavWidth(width);
+      }
+    }, []);
+  
     const [activityCalendar, setActivityCalendar] = useState(false);
     const [bookingHistory, setBookingHistory] = useState(false);
     const [bookingManagement, setBookingManagement] = useState(false);
     const [createBooking, setCreateBooking] = useState(true);
-  
+    const [sidenav , Hidesidenav] = useState(false);
+    
+
     const handlePageChange = (selectedValue) => {
       setActivityCalendar(selectedValue === 'calendar');
       setBookingHistory(selectedValue === 'history');
       setBookingManagement(selectedValue === 'management');
       setCreateBooking(selectedValue === 'create');
     }
-  
+
+ 
     return (
       <>
         <div id="adaaddsadds">
@@ -50,8 +77,9 @@ export default function Sidebar() {
            
             <div id="spacer"></div>
             <Link to={'/'} ><button>Log Out</button></Link>
+            <button onClick={closeNavbar}>Collapse</button>
           </div>
-          {activityCalendar && <Calendar />}
+            {activityCalendar && <Calendar />}
             {bookingHistory && <Calendar />}
             {/* replace calendar with a functional component */}
             {bookingManagement && <Meetinglist />}
@@ -59,4 +87,5 @@ export default function Sidebar() {
         </div>
         </>
     )
+  
 }
