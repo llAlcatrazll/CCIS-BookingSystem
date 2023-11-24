@@ -7,6 +7,12 @@ import clock from '/src/assets/clock.png';
 import calendar from '/src/assets/date.png';
 import { useFetcher } from 'react-router-dom';
 
+const logoElement = <img src={logo} id='imagesizing' alt="Logo" />;
+const sunElement = <img src={sun} id='imagesizing' alt="Logo" />;
+const clockElement = <img src={clock} id='imagesizing' alt="Logo" />;
+const calendarElement = <img src={calendar} id='imagesizing' alt="Logo" />;
+
+
 const eventname = 'CCIS Acquaintance Party';
 const description = 'A get to know college party';
 const eventdate = 'December 02 2023';
@@ -14,10 +20,8 @@ const weekday = 'Saturday';
 const eventstarttime = '4:00 PM';
 const eventendtime = '9:00 PM';
 const status = 'Pending';
-const logoElement = <img src={logo} id='imagesizing' alt="Logo" />;
-const sunElement = <img src={sun} id='imagesizing' alt="Logo" />;
-const clockElement = <img src={clock} id='imagesizing' alt="Logo" />;
-const calendarElement = <img src={calendar} id='imagesizing' alt="Logo" />;
+
+
 
 export default function Eventcard() {
   return (

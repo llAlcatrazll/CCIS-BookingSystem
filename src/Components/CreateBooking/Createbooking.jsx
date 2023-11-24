@@ -1,18 +1,26 @@
 import "./createbooking.css";
 import * as datedreamer from "datedreamer";
 import logo from '/src/assets/AGSO.png';
+
+
 const logoElement = <img src={logo} id='user-image-sizing' alt="Logo" />;
 const Orgname = 'Administrative and General Services Office';
 const officername = 'Philip Anthony Ponce';
 const officerposition = 'Sports Undersecretary';
+
+
+
 import { useState } from "react";
 import React from "react";
+
+
+
 
 function hourselector() {
   return (
     <React.Fragment>
       <option value="">Select Hour</option>
-      {Array.from({ length: 12 }, (_, index) => {
+      {Array.from({ length: 24 }, (_, index) => {
         const hour = String(index + 1).padStart(2, '0');
         return (
           <option key={hour} value={hour}>
@@ -44,26 +52,77 @@ export default function Createbooking() {
     const [Facility, setFacility] = useState(false);
     const [Room, setRoom] = useState(false);
     // usestate mean if its currently being used its true and reverts to false when its not
-  
+    const [eventname, setEventName] = useState('');
+    const [addressofEvent, setAddress] = useState('');
+    const [purposeofEvent, setPurpose] = useState('');
+    const [facilityName, setFacilityName] = useState('');
+    const [endofEvent, setEndofEvent] = useState('');
+    const [startofEvent, setStartofEvent] = useState('');
+
     const handleAffiliationChange = (event) => {
       const selectedValue = event.target.value;
   
       setFacility(selectedValue === 'facility');
       setRoom(selectedValue === 'room');
+
+    };
+
+    const handlesubmit = async(e) =>{
+      e.preventDefault();
+      const blog = {eventname, addressofEvent, purposeofEvent, facilityName, startofEvent, endofEvent, status:'pending'};
+
+      // console.log(blog)
+      await fetch("http://10.6.9.56:3000/sample-post",
+      {method: 'POST',
+     headers: { "Content-Type": "application/json"},
+        body: JSON.stringify(blog)
+      }).then((res) => {
+        console.log('new blog added');
+        console.log(res);
+      })
+
+
+
+
+      // fetch('http://localhost:8000/blogs', {
+      //   method: 'POST',
+      //   headers: { "Content-Type": "application/json"},
+      //   body: JSON.stringify(blog)
+      // }).then(() => {
+      //   console.log('new blog added');
+      // })
     };
 
     return(
         <>
         <div id="fullsizeform">
           <div id="center-wrapper">
-            <div id="inside-division">
-              <input type="text" placeholder="Name of Event" />
-              <input type="text" placeholder="Address and Tel. No. (if any)" />
-              <input type="text" placeholder="Purpose of Request" />
+            <form id="inside-division" onSubmit={handlesubmit}>
+              <input  
+              required
+              value={eventname}   
+              onChange={(e) => setEventName(e.target.value)}
+              type="text" 
+              placeholder="Name of Event" />
+
+              <input 
+              required
+              value={addressofEvent}
+              onChange={(e) => setAddress(e.target.value)}
+               type="text" 
+               placeholder="Address and Tel. No. (if any)" />
+
+              <input 
+              required
+              value={purposeofEvent}
+              onChange={(e) => setPurpose(e.target.value)}
+               type="text"
+                placeholder="Purpose of Request" />
   
               <div id="smallerbox-date">
 
                 <div className="type-facility">
+                  
                   <select name="Timein" id="">
                     <option value=""> Month</option>
                     <option value="Jan">January</option>
@@ -84,22 +143,31 @@ export default function Createbooking() {
 
 
 
-                <p>Select Date</p>
+                
                 <div className="type-facility">
-                <select name="Timein" id="">
-                    {hourselector()}
-                  </select>
-                  <select name="Timein" id="">
-                    <option value="">Select Minutes</option>
-                    <option value="">00</option>
-                    <option value="">30</option>
-                  </select>
-
-                  <select name="Timein" id="">
-                    <option value="">Select Median</option>
-                    <option value="">AM</option>
-                    <option value="">PM</option>
-                  </select>
+                <p className="date-select-header">Select Starting Time</p>
+                  <input
+                    type="datetime-local"
+                    id="meeting-time" 
+                    name="meeting-time"
+                    // value="2023-11-24T19:30"
+                    value={startofEvent}
+                    required
+                    onChange={(e) => setStartofEvent(e.target.value)}
+                     />
+                </div>
+                
+                <div className="type-facility">
+                <p className="date-select-header">Select Ending Time</p>
+                  <input
+                    type="datetime-local"
+                    id="meeting-time" 
+                    name="meeting-time"
+                    // value="2023-11-24T19:30"
+                    value={endofEvent}
+                    required
+                    onChange={(e) => setEndofEvent(e.target.value)}
+                     />
                 </div>
 
 
@@ -111,9 +179,12 @@ export default function Createbooking() {
                 <div className="type-facility">
                   
                 <select
-                  name="Venue-Chechk"
-                  id=""
+                  name="Venue-Check"
+                  required
+                  id="value"
+                  // onChange={handleAffiliationChange}
                   onChange={handleAffiliationChange}
+
                 >
                   <option value="">Select a Type</option>
                   <option value="facility">Facility</option>
@@ -122,12 +193,12 @@ export default function Createbooking() {
                 <br />
                 <select
                   name="Room-facility-check"
+                  required
                   id="value"
-                  onChange={(e) => {
-                    setValue(e.target.value);
-                  }}>
+                  onChange={(e) => setFacilityName(e.target.value)}>
 
-                  <option value="">Select a Facility</option>
+                  <option value=""
+                  >Select a Facility</option>
                   {Facility && (
                     <>
                       <option value="gymnasium">Gymnasium</option>
@@ -156,8 +227,9 @@ export default function Createbooking() {
               </div>
 
              <button>Submit</button>
+             <div></div>
             
-            </div>
+            </form>
             {/*  */}
             <div>
             <div id="inside-division-right">

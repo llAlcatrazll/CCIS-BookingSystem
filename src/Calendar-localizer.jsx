@@ -3,7 +3,11 @@ import globalize from 'globalize';
 import './Big-Calendar/react-big-calendar.css';
 // import './src/calendar-localizer.css'
 import './react-big-calendar.css';
+import moment from 'moment/moment';
 // 'C:\Users\alexi\CCIS-BookingSystem\src\calendar-localizer.css
+
+
+
 const createCalendar = (events) => {
   const localizer = globalizeLocalizer(globalize);
 
