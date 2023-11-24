@@ -3,10 +3,10 @@ import Eventcard from "../EventCard/Eventcard";
 export default function Meetinglist(){
     return(
         <>
-        <div id="mainbox">
-          <div id="topeventlistbox-nav">
+        <div id="fullsizeform">
+          {/* <div id="topeventlistbox-nav">
 
-          </div>
+          </div> */}
           <div id="eventlistbox"> 
             
           <Eventcard />

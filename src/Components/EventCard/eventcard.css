@@ -4,22 +4,27 @@
     /* height: auto;  set it tto auto after layouting the inner*/
     height: auto;
     margin: 10px 10px 10px 10px;
-    border-radius: 4px;
+    border-radius: 10px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(202, 202, 202);
     border-width: 2px;
+    
     color: black;
     padding: 2px 2px 2px 2px;
+
 }
 #test{
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
+
 }
 #flex-container{
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: row;
     padding-left: 10px;
+    width: 100%;
 }
 #flex-container > div {
     
@@ -30,8 +35,10 @@
     height: auto;
     margin: 5px;
     text-align: center;
-    font-size: small ;
+    font-size: medium ;
     margin-right: 20px;
+    width: 100%;
+    font-weight: 700  ;
   }
   #evnentame-decor{
     font-size: x-large;
@@ -56,4 +63,28 @@
     height: auto;
     width: 10px;
     display: flex;
+  }
+  #leftdiv-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #description-fade{
+    opacity: 50%;
+    font-weight: 600;
+  }
+  #circle{
+    width: 18px;
+    height: 18px;
+    background-color: #F45F5F;
+    margin-left: 10px;
+    border-radius: 200px;
+  }
+  #status-card{
+    display: flex;
+    flex-direction: row;
+  }
+  #eventname-bold{
+    font-weight: 700;
+    font-size: larger;
   }

@@ -4,6 +4,7 @@ import Calendar from "../Calendar/Calendar";
 import Meetinglist from "../Meetinglist/Meetinglist";
 import Createbooking from "../CreateBooking/Createbooking";
 import React, { useState, useEffect } from 'react';
+import Navigation from "../Navigation/Navigation";
 
 // function closeNav() {
 //   document.getElementById("mySidebar").style.width = "0";
@@ -20,7 +21,7 @@ function closeNavbar() {
     sidebar.style.width = "300px";
   }
 }
-  
+
 export default function Sidebar() {
 
     //  Current Finished Pages
@@ -64,7 +65,7 @@ export default function Sidebar() {
                 Activity Calendar
               </li>
               <li className="list-items extra" onClick={() => handlePageChange('history')}>
-                Booking History
+                Search Availability
               </li>
               <li className="list-items extra" onClick={() => handlePageChange('management')}>
                 Booking Management
@@ -80,7 +81,7 @@ export default function Sidebar() {
             <button onClick={closeNavbar}>Collapse</button>
           </div>
             {activityCalendar && <Calendar />}
-            {bookingHistory && <Calendar />}
+            {bookingHistory && <Navigation />}
             {/* replace calendar with a functional component */}
             {bookingManagement && <Meetinglist />}
             {createBooking && <Createbooking />}

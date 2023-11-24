@@ -1,7 +1,7 @@
 
 import "./dashboard.css";
 import { Link } from "react-router-dom";
-import Navigation from "../Topnav/Navigation";
+import Navigation from "../Navigation/Navigation";
 import Sidebar from "../Sidebar/Sidebar";
 import Calendar from "../Calendar/Calendar";
 import Meetinglist from "../Meetinglist/Meetinglist";

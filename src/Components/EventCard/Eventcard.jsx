@@ -5,6 +5,7 @@ import logo from '/src/assets/logo.png';
 import sun from '/src/assets/sun.png';
 import clock from '/src/assets/clock.png';
 import calendar from '/src/assets/date.png';
+import { useFetcher } from 'react-router-dom';
 
 const eventname = 'CCIS Acquaintance Party';
 const description = 'A get to know college party';
@@ -23,18 +24,19 @@ export default function Eventcard() {
     <>
     <div id='eventcardbox'>
       <div id='test'>
-        <div className='divrows' id='evnentame-decor'>{eventname}</div>
-        {/* <div className='divrows'>{description}</div> */}
-
-        {/* bottom nav info */}
         <div id='flex-container'>
-          <div className='imagearrangement'>{clockElement}</div>
-          <div>{eventstarttime}</div>
-          <div>{eventendtime}</div>
-          <div className='imagearrangement'>{calendarElement}</div>
+          <div id='leftdiv-flex'>
+            <div></div>
+            <div id='eventname-bold'>{eventname}</div>
+            <div id='description-fade'>{description}</div>
+            <div></div>
+          </div>
           <div>{eventdate}</div>
-          <div className='imagearrangement'>{sunElement}</div>
-          <div>{weekday}</div>
+          <div>{eventstarttime} - {eventendtime}</div>
+          <div id='status-card'>
+            <div>{status}</div>
+          <div id='circle'></div>
+          </div>
         </div>
 
         </div>

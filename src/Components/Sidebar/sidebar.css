@@ -1,5 +1,5 @@
 
-
+@import 'react-big-calendar/lib/css/react-big-calendar.css';
 #sidebarbox{
     width: 300px;
     
@@ -86,4 +86,7 @@ ul{
     width: 100px;
     height: 400px;
     background-color: aqua;
+}
+button{
+    color: white;
 }

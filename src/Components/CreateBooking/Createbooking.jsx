@@ -207,9 +207,11 @@ export default function Createbooking() {
                         
                         </div>
             </div>
+            <div id="bottom-info" >
+              asdsadsad
+            </div>
             </div>
         </div>
-        {/* <div is="rightdiv">asdadas</div> */}
         </div>
         </>
     )

@@ -4,7 +4,11 @@ import {
   Route,
   RouterProvider
 } from "react-router-dom";
+import BasicCalendar from "./BasicCalendar";
 
+// ControlCalendar,
+// CustomizingCalendar,
+// AdvancedCalendar,
 import './App.css'
 import Login from "./Components/Login/Login";
 import Forgotpass from "./Components/Forgotpassword/ForgotPass"
@@ -12,6 +16,8 @@ import Createaccount from "./Components/createaccount";
 import Landingpage from "./Pages/landingpage";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Sidebar from "./Components/Sidebar/Sidebar";
+import Navigation from "./Components/Navigation/Navigation";
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     // basic route
@@ -22,11 +28,13 @@ const router = createBrowserRouter(
       <Route path="/Landingpage" element={<Landingpage />}>  </Route>
       <Route path="/Dashboard" element={<Dashboard />}></Route>
       <Route path="/Sidebar" element={<Sidebar />}></Route>
+      <Route path="/Navigation" element={<Navigation />}></Route>
     </>
   )
   );
 
 function App() {
   return <RouterProvider router={router} />;
+  <BasicCalendar></BasicCalendar>
 }
 export default App

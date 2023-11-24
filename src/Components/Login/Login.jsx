@@ -1,9 +1,15 @@
 
 import "./login.css";
 import { Link, Navigate, useNavigate } from "react-router-dom";
-
+import { useEffect } from "react";
 
 export default function Login(){
+//     useEffect(async() =>
+//     {
+//        const { data } = await fetch("10.6.9.11:3002/sample")
+//        console.log(data);
+//     }
+//     )
     return(
         <>
         <div id="background">
