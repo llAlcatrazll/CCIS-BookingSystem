@@ -15,4 +15,6 @@
 }
 #eventlistbox{
     width: 1200px;
+    overflow-y: scroll;
+    height: 700px;
 }

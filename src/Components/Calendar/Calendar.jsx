@@ -17,19 +17,19 @@ export default function Calendar(){
     const myEventsList = [
         // Your event data goes here
         {
-            start: moment("2023-11-26T10:00:00").toDate(),
+            start: moment("2023-11-26T10:30:00").toDate(),
             end: moment("2023-11-26T12:00:00").toDate(),
-            title: "adsadadadasd",
+            title: "LIRC Tournament",
         },
         {
             start: moment("2023-11-26T14:00:00").toDate(),
             end: moment("2023-11-26T16:00:00").toDate(),
-            title: "asdsd",
+            title: "Esports Games",
         },
         {
             start: moment("2023-11-26T18:00:00").toDate(),
             end: moment("2023-11-26T20:00:00").toDate(),
-            title: "asdsd",
+            title: "JPIA conference",
         }
       ];
     
