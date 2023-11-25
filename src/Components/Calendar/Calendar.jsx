@@ -11,7 +11,12 @@ const events = [
     },
 ];
 
+/*
+READ ME!
+   Calendar has many sidebar features such as selective filtering
 
+
+*/ 
 
 export default function Calendar(){
     const myEventsList = [
@@ -27,9 +32,29 @@ export default function Calendar(){
             title: "Esports Games",
         },
         {
-            start: moment("2023-11-26T18:00:00").toDate(),
-            end: moment("2023-11-26T20:00:00").toDate(),
+            start: moment("2023-11-23T18:00:00").toDate(),
+            end: moment("2023-11-24T20:00:00").toDate(),
             title: "JPIA conference",
+        },
+        {
+            start: moment("2023-11-05T18:00:00").toDate(),
+            end: moment("2023-11-05T20:00:00").toDate(),
+            title: "Reach out Activity",
+        },
+        {
+            start: moment("2023-11-15T18:00:00").toDate(),
+            end: moment("2023-11-16T20:00:00").toDate(),
+            title: "Book Week",
+        },
+        {
+            start: moment("2023-11-28T18:00:00").toDate(),
+            end: moment("2023-11-28T18:00:00").toDate(),
+            title: "IT Week",
+        },
+        {
+            start: moment("2023-11-30T18:00:00").toDate(),
+            end: moment("2023-11-30T18:00:00").toDate(),
+            title: "Payment Deadline",
         }
       ];
     

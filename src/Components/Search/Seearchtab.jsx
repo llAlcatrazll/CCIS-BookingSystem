@@ -4,7 +4,23 @@ const todaydate_value = 'November 25, 2023'
 import { useState } from 'react';
 import React from 'react';
 
+/*
+READ ME 
+
+  Search page is for searching on whether there is an available room or facility for a specific range of date or time
+  
+  User can select a date range and time range
+  must specify if it is a room or facility
+  upon selecting room or facility they can choose a specific area or any for broader search
+
+  Data to pass back in this area is 
+    facilityName : "bouleyroom"
+    startofEvent":"2023-11-24T16:00"
+    endofEvent":"2023-11-24T20:30"
+
+*/
 import Eventcard from '../EventCard/Eventcard';
+// test data
 const result = 
 '[{"eventname":"Christmas Party","addressofEvent":"Gymnasium","purposeofEvent":"Get to know event","facilityName":"bouleyroom","startofEvent":"2023-11-24T16:00","endofEvent":"2023-11-24T20:30","status":"pending"},{"eventname":"Holocaust","addressofEvent":"Gymnasium","purposeofEvent":"Get to know event","facilityName":"bouleyroom","startofEvent":"2023-11-24T16:00","endofEvent":"2023-11-24T20:30","status":"denied"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"}]';
 const datas = JSON.parse(result);

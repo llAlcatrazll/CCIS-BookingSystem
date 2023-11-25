@@ -14,35 +14,11 @@ export default function Dashboard() {
     return(
         <>
         <div id="mainwrapper">
-        
-  
         <div id="leftdiv"> <Sidebar/> </div>
-
-        <div id="rightdiv"> 
-{/*          
-         this is for the eventcard schedules
-
-         <Meetinglist>     
-         </Meetinglist>   */}
-         
-         <Createbooking />
+        <div id="rightdiv">        
+        <Createbooking />
            </div>
-        </div>
-    
-    
-        {/* <div>
-        </div>
-       
-         */}
-        {/* <div id="mothercomponent"> */}
-        {/* center component */}
-            
-            {/* <div id="thediv">
-            
-            adfdf
-            </div> */}
-            
-        
+        </div>      
             </>
       
     )

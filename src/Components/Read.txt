@@ -1,0 +1,8 @@
+Admin Features are to be done later
+
+Prioritze booking, viewing of bookings and displaying them in the calendar
+
+Admind Features are such:
+    Add remove events
+    View all events from all clubs and governments
+    

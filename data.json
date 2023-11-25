@@ -1,105 +1,105 @@
 [
     {
-      "eventname": "Nicki Party",
+      "eventname": "Intramurals",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "Gymnasium",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "pending"
     },
     {
-      "eventname": "Holocaust",
+      "eventname": "Basketball Tournament",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "Open Court",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "denied"
     },
     {
-      "eventname": "Christmas Party",
+      "eventname": "Mr Intramurals Pageant",
       "addressofEvent": "Gymnasium CJC",
       "purposeofEvent": "party",
-      "facilityName": "bouleyroom",
+      "facilityName": "Gymnasium",
       "startofEvent": "2023-11-03T16:43",
       "endofEvent": "2023-11-30T16:43",
       "status": "approved"
     },{
-      "eventname": "Nicki Party",
+      "eventname": "IT Week",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "Coindre Grounds",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "pending"
     },
     {
-      "eventname": "Holocaust",
+      "eventname": "General Assembly",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "EdTech Hall",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "denied"
     },
     {
-      "eventname": "Christmas Party",
+      "eventname": "E-Sports Fest",
       "addressofEvent": "Gymnasium CJC",
       "purposeofEvent": "party",
-      "facilityName": "bouleyroom",
+      "facilityName": "Net Central",
       "startofEvent": "2023-11-03T16:43",
       "endofEvent": "2023-11-30T16:43",
       "status": "approved"
     },{
-      "eventname": "Nicki Party",
+      "eventname": "Tropa Time",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "M116",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "pending"
     },
     {
-      "eventname": "Holocaust",
+      "eventname": "Computer Studies Extension",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "CLB 1",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "denied"
     },
     {
-      "eventname": "Christmas Party",
+      "eventname": "Teachers Day",
       "addressofEvent": "Gymnasium CJC",
       "purposeofEvent": "party",
-      "facilityName": "bouleyroom",
+      "facilityName": "M116",
       "startofEvent": "2023-11-03T16:43",
       "endofEvent": "2023-11-30T16:43",
       "status": "approved"
     },{
-      "eventname": "Nicki Party",
+      "eventname": "Acquaintance Party",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "Open Court",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "pending"
     },
     {
-      "eventname": "Holocaust",
+      "eventname": "Battle of Academic Wizards",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "bouleyroom",
+      "facilityName": "Ed Tech Hall",
       "startofEvent": "2023-11-24T16:00",
       "endofEvent": "2023-11-24T20:30",
       "status": "denied"
     },
     {
-      "eventname": "Christmas Party",
+      "eventname": "Coding Gym",
       "addressofEvent": "Gymnasium CJC",
       "purposeofEvent": "party",
-      "facilityName": "bouleyroom",
+      "facilityName": "Clb 2",
       "startofEvent": "2023-11-03T16:43",
       "endofEvent": "2023-11-30T16:43",
       "status": "approved"

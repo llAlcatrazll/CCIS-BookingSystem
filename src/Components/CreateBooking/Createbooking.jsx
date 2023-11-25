@@ -13,7 +13,23 @@ const officerposition = 'Sports Undersecretary';
 import { useState } from "react";
 import React from "react";
 
+/*
+READ ME!
 
+For data submissions they are to be passed to the host changeable @line 83
+
+current data being submitted are 
+(All string)
+
+  eventname
+  addressofEvent
+  purposeofEvent
+  facilityName
+  startofEvent
+  endofEvent
+  status
+  
+*/
 
 
 function hourselector() {
@@ -46,6 +62,7 @@ function dayselector() {
     </React.Fragment>
   );
 }
+
 
 export default function Createbooking() {
 
@@ -82,17 +99,6 @@ export default function Createbooking() {
     //     console.log('new blog added');
     //     console.log(res);
     //   })
-
-
-
-
-      // fetch('http://localhost:8000/blogs', {
-      //   method: 'POST',
-      //   headers: { "Content-Type": "application/json"},
-      //   body: JSON.stringify(blog)
-      // }).then(() => {
-      //   console.log('new blog added');
-      // })
     };
 
     return(
