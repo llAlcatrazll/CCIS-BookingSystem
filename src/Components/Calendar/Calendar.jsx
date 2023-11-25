@@ -1,6 +1,7 @@
 import "./calendar.css"
 import moment from "moment/moment"
 import createCalendar from "../../Calendar-localizer"
+import '/Users/alexi/CCIS-BookingSystem/src/index.css';
 
 const events = [
     {
@@ -12,8 +13,28 @@ const events = [
 
 
 
-export default function Calendar() {
-    return(
+export default function Calendar(){
+    const myEventsList = [
+        // Your event data goes here
+        {
+            start: moment("2023-11-26T10:00:00").toDate(),
+            end: moment("2023-11-26T12:00:00").toDate(),
+            title: "adsadadadasd",
+        },
+        {
+            start: moment("2023-11-26T14:00:00").toDate(),
+            end: moment("2023-11-26T16:00:00").toDate(),
+            title: "asdsd",
+        },
+        {
+            start: moment("2023-11-26T18:00:00").toDate(),
+            end: moment("2023-11-26T20:00:00").toDate(),
+            title: "asdsd",
+        }
+      ];
+    
+      const MyCalendar = createCalendar(myEventsList);
+    return( 
         <>
         <div id="fullsizecalendar">
             <div id="spacer-calendar">
@@ -24,8 +45,8 @@ export default function Calendar() {
                 </div>
                 <div className="temporary">
                     <div id="tempcalendar">
-
-                        <createCalendar events={events} />
+                    {/* <MyCalendar /> */}
+                        <MyCalendar  />
                     </div>
                 </div>
             </div>
