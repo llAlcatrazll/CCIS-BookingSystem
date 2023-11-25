@@ -1,8 +1,9 @@
 *{
     box-sizing: border-box;
     margin-left: 0;
-    align-items: center;
+    
 }
+/* do not global scope * */
 body{
     padding: 0;
   

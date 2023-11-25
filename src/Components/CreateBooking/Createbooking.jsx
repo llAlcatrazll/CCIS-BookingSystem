@@ -48,6 +48,8 @@ function dayselector() {
 }
 
 export default function Createbooking() {
+
+
     const [value, setValue] = useState('');
     const [Facility, setFacility] = useState(false);
     const [Room, setRoom] = useState(false);
@@ -71,15 +73,15 @@ export default function Createbooking() {
       e.preventDefault();
       const blog = {eventname, addressofEvent, purposeofEvent, facilityName, startofEvent, endofEvent, status:'pending'};
 
-      // console.log(blog)
-      await fetch("http://10.6.9.56:3000/sample-post",
-      {method: 'POST',
-     headers: { "Content-Type": "application/json"},
-        body: JSON.stringify(blog)
-      }).then((res) => {
-        console.log('new blog added');
-        console.log(res);
-      })
+      console.log(blog)
+    //   await fetch("http://10.6.9.56:3000/sample-post",
+    //   {method: 'POST',
+    //  headers: { "Content-Type": "application/json"},
+    //     body: JSON.stringify(blog)
+    //   }).then((res) => {
+    //     console.log('new blog added');
+    //     console.log(res);
+    //   })
 
 
 
@@ -121,7 +123,7 @@ export default function Createbooking() {
   
               <div id="smallerbox-date">
 
-                <div className="type-facility">
+                {/* <div className="type-facility">
                   
                   <select name="Timein" id="">
                     <option value=""> Month</option>
@@ -139,13 +141,13 @@ export default function Createbooking() {
                     <option value="2024">2023 - 2024</option>
              
                   </select>
-                  </div>
+                  </div> */}
 
 
 
                 
-                <div className="type-facility">
-                <p className="date-select-header">Select Starting Time</p>
+                <div className="date-facility">
+                  <div className="date-select-header">Select Starting Time</div>
                   <input
                     type="datetime-local"
                     id="meeting-time" 
@@ -157,8 +159,8 @@ export default function Createbooking() {
                      />
                 </div>
                 
-                <div className="type-facility">
-                <p className="date-select-header">Select Ending Time</p>
+                <div className="date-facility">
+                <div className="date-select-header">Select Ending Time</div>
                   <input
                     type="datetime-local"
                     id="meeting-time" 
@@ -226,10 +228,10 @@ export default function Createbooking() {
 
               </div>
 
-             <button>Submit</button>
-             <div></div>
-            
+           
+              <button>Submit</button>
             </form>
+            
             {/*  */}
             <div>
             <div id="inside-division-right">

@@ -76,9 +76,21 @@
   #circle{
     width: 18px;
     height: 18px;
-    background-color: #F45F5F;
+
     margin-left: 10px;
     border-radius: 200px;
+  }
+  .denied{
+    background-color: #F45F5F;
+  }
+  .approved{
+    background-color: rgb(132, 207, 132);
+  }
+  .pending{
+    background-color: rgb(245, 245, 145);
+  }
+  .error{
+    background-color: black;
   }
   #status-card{
     display: flex;

@@ -5,6 +5,7 @@ import Meetinglist from "../Meetinglist/Meetinglist";
 import Createbooking from "../CreateBooking/Createbooking";
 import React, { useState, useEffect } from 'react';
 import Navigation from "../Navigation/Navigation";
+import Searchtab from "../Search/Seearchtab";
 
 // function closeNav() {
 //   document.getElementById("mySidebar").style.width = "0";
@@ -45,6 +46,7 @@ export default function Sidebar() {
     const [bookingManagement, setBookingManagement] = useState(false);
     const [createBooking, setCreateBooking] = useState(true);
     const [sidenav , Hidesidenav] = useState(false);
+    const [searchtab, setSearchTab] = useState(false);
     
 
     const handlePageChange = (selectedValue) => {
@@ -52,6 +54,7 @@ export default function Sidebar() {
       setBookingHistory(selectedValue === 'history');
       setBookingManagement(selectedValue === 'management');
       setCreateBooking(selectedValue === 'create');
+      setSearchTab(selectedValue === 'search')
     }
 
  
@@ -70,6 +73,9 @@ export default function Sidebar() {
               <li className="list-items extra" onClick={() => handlePageChange('management')}>
                 Booking Management
               </li>
+              <li className="list-items extra" onClick={() => handlePageChange('search')}>
+              Search Availability
+              </li>
               <li className="list-items extra" onClick={() => handlePageChange('create')}>
                 Create Booking
               </li>
@@ -84,6 +90,7 @@ export default function Sidebar() {
             {bookingHistory && <Navigation />}
             {/* replace calendar with a functional component */}
             {bookingManagement && <Meetinglist />}
+            {searchtab && <Searchtab />}
             {createBooking && <Createbooking />}
         </div>
         </>
