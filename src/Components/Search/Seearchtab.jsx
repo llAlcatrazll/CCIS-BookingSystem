@@ -4,7 +4,11 @@ const todaydate_value = 'November 25, 2023'
 import { useState } from 'react';
 import React from 'react';
 
-
+import Eventcard from '../EventCard/Eventcard';
+const result = 
+'[{"eventname":"Christmas Party","addressofEvent":"Gymnasium","purposeofEvent":"Get to know event","facilityName":"bouleyroom","startofEvent":"2023-11-24T16:00","endofEvent":"2023-11-24T20:30","status":"pending"},{"eventname":"Holocaust","addressofEvent":"Gymnasium","purposeofEvent":"Get to know event","facilityName":"bouleyroom","startofEvent":"2023-11-24T16:00","endofEvent":"2023-11-24T20:30","status":"denied"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"},{"eventname":"Christmas Party","addressofEvent":"Gymnasium CJC","purposeofEvent":"party","facilityName":"bouleyroom","startofEvent":"2023-11-03T16:43","endofEvent":"2023-11-30T16:43","status":"approved"}]';
+const datas = JSON.parse(result);
+// convert this to data that would be found using the search function
 
 
 export default function Searchtab(){
@@ -14,9 +18,6 @@ export default function Searchtab(){
     const [Facility, setFacility] = useState(false);
     const [Room, setRoom] = useState(false);
     // usestate mean if its currently being used its true and reverts to false when its not
-    const [eventname, setEventName] = useState('');
-    const [addressofEvent, setAddress] = useState('');
-    const [purposeofEvent, setPurpose] = useState('');
     const [facilityName, setFacilityName] = useState('');
     const [endofEvent, setEndofEvent] = useState('');
     const [startofEvent, setStartofEvent] = useState('');
@@ -31,16 +32,16 @@ export default function Searchtab(){
 
     const handlesubmit = async(e) =>{
       e.preventDefault();
-      const blog = { facilityName, startofEvent, endofEvent, status:'pending'};
+      const blog = { facilityName, startofEvent, endofEvent};
 
       console.log(blog)
 
     };
 
-    return(
+    return( 
         <>
         <div id="fullsizeform">
-          <div id="center-wrapper">
+          <div id="center-searchtab">
             <form id="searchselectors" onSubmit={handlesubmit}>
   
               <div id="row-adf">     
@@ -69,10 +70,6 @@ export default function Searchtab(){
                     onChange={(e) => setEndofEvent(e.target.value)}
                      />
                 </div>
-
-
-
-
 
 
 {/*  Select type - Select Facility */}
@@ -132,10 +129,13 @@ export default function Searchtab(){
               </div>
            
               <button>Search</button>
-            </form>
-            
+                </form>
+            <div id='bottom-resultbar'>
+                {/* simple loop mapping to display all the data gathered */}
+                {datas.map(data => ( <Eventcard  data ={data} />))}
+
+                </div>
         </div>
-        
         </div>
         </>
     )
