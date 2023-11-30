@@ -73,10 +73,9 @@ export default function Createbooking() {
 
     const [confirmbox, setConfirmbox] = useState(false);
 
-    // const handlecornfimBox = () => {
-    //   setConfirmbox ===
-
-    // }
+    const handleConfirmBox = () => {
+        setConfirmbox(!confirmbox);
+    };
 
     const handleAffiliationChange = (event) => {
         const selectedValue = event.target.value;
@@ -120,7 +119,6 @@ export default function Createbooking() {
                             type='text'
                             placeholder='Name of Event'
                         />
-
                         <input
                             required
                             value={addressofEvent}
@@ -128,7 +126,6 @@ export default function Createbooking() {
                             type='text'
                             placeholder='Address and Tel. No. (if any)'
                         />
-
                         <input
                             required
                             value={purposeofEvent}
@@ -136,28 +133,7 @@ export default function Createbooking() {
                             type='text'
                             placeholder='Purpose of Request'
                         />
-
                         <div id='smallerbox-date'>
-                            {/* <div className="type-facility">
-                  
-                  <select name="Timein" id="">
-                    <option value=""> Month</option>
-                    <option value="Jan">January</option>
-                    <option value="Febuary">Febuary</option>
-                    <option value="March">March</option>
-                    <option value="April  ">April</option>
-                  </select>
-                  <select name="Timein" id="">
-                    {dayselector()}
-                  </select>
-                  <select name="Timein" id="">
-                    <option value="">Select School Year</option>
-                    <option value="2023">2022 - 2023</option>
-                    <option value="2024">2023 - 2024</option>
-             
-                  </select>
-                  </div> */}
-
                             <div className='date-facility'>
                                 <div className='date-select-header'>
                                     Select Starting Time
@@ -252,8 +228,46 @@ export default function Createbooking() {
                                 </select>
                             </div>
                         </div>
-
-                        <button>Submit</button>
+                        <button onClick={handleConfirmBox}>Confirm</button>
+                        {confirmbox && (
+                            <div id='confirmation-box'>
+                                <div id='background-blurbox'></div>
+                                <div id='box-forconfirmation'>
+                                    <h3>Confirm your Booking Details</h3>
+                                    <div className='event-detailsformatter'>
+                                        <p className='label'>Event Name: </p>
+                                        <p>{eventname}</p>
+                                    </div>
+                                    <div className='event-detailsformatter'>
+                                        <p>Event Address: </p>
+                                        {addressofEvent}
+                                    </div>
+                                    <div className='event-detailsformatter'>
+                                        <p>Purpose of Event:</p>
+                                        {purposeofEvent}
+                                    </div>
+                                    <div className='event-detailsformatter'>
+                                        <p>Facility Name:</p>
+                                        {facilityName}
+                                    </div>
+                                    <div className='event-detailsformatter'>
+                                        <p>Start of Event:</p>
+                                        {startofEvent}
+                                    </div>
+                                    <div className='event-detailsformatter'>
+                                        <p>End of Event:</p>
+                                        {endofEvent}
+                                    </div>
+                                    <button
+                                        onClick={handleConfirmBox}
+                                        id='right-space'
+                                    >
+                                        Cancle
+                                    </button>
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        )}
                     </form>
 
                     {/*  */}

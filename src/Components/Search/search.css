@@ -91,3 +91,21 @@
 
     background-color: rgb(190, 190, 190);
 }
+#appt{
+    color: black;
+    background-color: white;
+    font-size: x-large;
+    border-style: solid;
+    border-radius: 5px;
+    stroke: black;
+}
+.date-picker-tab{
+    font-size: x-large;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    stroke: black;
+}
+.date-clicker{
+    text-align: left;
+}

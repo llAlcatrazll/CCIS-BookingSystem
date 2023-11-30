@@ -14,6 +14,7 @@
     padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 15px;
+    position: relative;
 }
 #inside-division > input{
     width: 100%;
@@ -188,4 +189,42 @@ li{
     font-weight: 500;
     padding-right: 170px;
     padding-bottom: 5px;
+}
+#confirmation-box{
+    width: 100%;
+    height: 100%;
+   
+    z-index: 9999;
+
+    position: absolute;
+    top: 0;
+    margin-left: -40px;
+
+}
+#box-forconfirmation{
+    background-color: rgb(250, 250, 250);
+    position: relative;
+    width: 500px;
+    height: 350px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    border-radius: 5px;
+    padding-top: 1px;
+}
+#background-blurbox{
+     background-color: rgb(32, 32, 32);
+     opacity: 60%    ;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+}
+.event-detailsformatter p{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+#right-space{
+    margin-right: 10px;
 }
