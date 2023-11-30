@@ -67,17 +67,14 @@
 }
 #orgname{
     color: #1D1D1D;
-
     text-align: center;
     font-size: xx-large;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-
 }
 #officerdetails{
     color: #1D1D1D;
-
     text-align: center;
     font-size: x-large;
     font-style: normal;
@@ -86,7 +83,6 @@
 }
 #officerdetails-position{
     color: #1D1D1D;
-
     text-align: center;
     font-size: large;
     font-style: normal;
@@ -140,7 +136,8 @@ select{
     background-color: white;
 }
 #personel-list{
-   
+    padding-bottom: 10px;
+    align-self: center;
     font-size: large;
     margin-left: 10px;
 }
@@ -171,7 +168,6 @@ li{
     width: 100%;
     height: 100%;
     margin-top: 10px;
- 
 }
 #meeting-time{
     background-color: #f0f0f0;

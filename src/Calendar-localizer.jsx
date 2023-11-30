@@ -6,24 +6,22 @@ import './react-big-calendar.css';
 import moment from 'moment/moment';
 // 'C:\Users\alexi\CCIS-BookingSystem\src\calendar-localizer.css
 
-
-
 const createCalendar = (events) => {
-  const localizer = globalizeLocalizer(globalize);
+    const localizer = globalizeLocalizer(globalize);
 
-  const MyCalendar = () => (
-    <div>
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        style={{ height: 500 }}
-      />
-    </div>
-  );
+    const MyCalendar = () => (
+        <div>
+            <Calendar
+                localizer={localizer}
+                events={events}
+                startAccessor='start'
+                endAccessor='end'
+                style={{ height: 500 }}
+            />
+        </div>
+    );
 
-  return MyCalendar;
+    return MyCalendar;
 };
 
-export default createCalendar
+export default createCalendar;

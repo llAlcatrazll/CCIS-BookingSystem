@@ -76,8 +76,8 @@
   #circle{
     width: 18px;
     height: 18px;
-
-    margin-left: 10px;
+    align-self: center;
+    margin-left: 30px;
     border-radius: 200px;
   }
   .denied{
@@ -95,8 +95,20 @@
   #status-card{
     display: flex;
     flex-direction: row;
+    align-self: center;
   }
   #eventname-bold{
     font-weight: 700;
     font-size: larger;
+  }
+  #triplediv-center{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  #min-content{
+    height: 1px;
+  }
+  .center-this-item{
+    align-self: center;
   }

@@ -1,5 +1,5 @@
-import React from 'react'
-import "./eventcard.css"
+import React from 'react';
+import './eventcard.css';
 import { duration } from 'moment/moment';
 import logo from '/src/assets/logo.png';
 import sun from '/src/assets/sun.png';
@@ -7,10 +7,10 @@ import clock from '/src/assets/clock.png';
 import calendar from '/src/assets/date.png';
 import { useFetcher } from 'react-router-dom';
 
-const logoElement = <img src={logo} id='imagesizing' alt="Logo" />;
-const sunElement = <img src={sun} id='imagesizing' alt="Logo" />;
-const clockElement = <img src={clock} id='imagesizing' alt="Logo" />;
-const calendarElement = <img src={calendar} id='imagesizing' alt="Logo" />;
+const logoElement = <img src={logo} id='imagesizing' alt='Logo' />;
+const sunElement = <img src={sun} id='imagesizing' alt='Logo' />;
+const clockElement = <img src={clock} id='imagesizing' alt='Logo' />;
+const calendarElement = <img src={calendar} id='imagesizing' alt='Logo' />;
 const temp1 = '2:00';
 const temp2 = '4:00';
 
@@ -40,39 +40,55 @@ Features:
       Sort by (Name, Data, FacilityName)
 */
 export default function Eventcard(data) {
-  console.log(data)
-  const { eventname,facilityName,purposeofEvent,status, startofEvent,endofEvent } = data.data;
-  
-  return (
-    <>
-    <div id='eventcardbox'>
-      <div id='test'>
-        <div id='flex-container'>
-          <div id='leftdiv-flex'>
-            <div></div>
-            <div id='eventname-bold'>{eventname}</div>
-            <div id='description-fade'>{purposeofEvent}</div>
-            <div></div>
+    console.log(data);
+    const {
+        eventname,
+        facilityName,
+        purposeofEvent,
+        status,
+        startofEvent,
+        endofEvent,
+    } = data.data;
 
-          </div>
-          <div>{facilityName}</div>
-          <div>{temp1} - {temp2}</div>
-          
-          <div id='status-card'>
-            <div>{status }</div>
-          <div id='circle'
-          className={
-            status == 'approved'? 'approved'
-           :status== 'pending' ? 'pending' 
-           :status == 'denied' ? 'denied' 
-           :'error'}
-          ></div>
+    return (
+        <>
+            <div id='eventcardbox'>
+                <div id='test'>
+                    <div id='flex-container'>
+                        <div id='leftdiv-flex'>
+                            <div></div>
+                            <div id='eventname-bold'>{eventname}</div>
+                            <div id='description-fade'>{purposeofEvent}</div>
+                            <div></div>
+                        </div>
+                        <div id='triplediv-center'>
+                            <div id='min-content'> </div>
+                            <div>{facilityName}</div>
+                            <div id='min-content'> </div>
+                        </div>
 
-          </div>
-        </div>
+                        <div className='center-this-item'>
+                            {temp1} - {temp2}
+                        </div>
 
-        </div>
-    </div>
-    </>
-  )
+                        <div id='status-card'>
+                            <div className='center-this-item'>{status}</div>
+                            <div
+                                id='circle'
+                                className={
+                                    status == 'approved'
+                                        ? 'approved'
+                                        : status == 'pending'
+                                          ? 'pending'
+                                          : status == 'denied'
+                                            ? 'denied'
+                                            : 'error'
+                                }
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    );
 }

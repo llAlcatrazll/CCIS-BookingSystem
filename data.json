@@ -1,72 +1,56 @@
 [
     {
-      "eventname": "Intramurals",
+      "eventname": "IT Week",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "Gymnasium",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
+      "facilityName": "Open Court",
+      "startofEvent": "2023-11-12T09:00:00",
+      "endofEvent": "2023-11-13T17:00:00",
       "status": "pending"
     },
     {
       "eventname": "Basketball Tournament",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "Open Court",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
-      "status": "denied"
+      "facilityName": "Gymnasium",
+      "startofEvent": "2023-11-01T14:00:00",
+      "endofEvent": "2023-11-02T20:00:00",
+      "status": "approved"
     },
     {
-      "eventname": "Mr Intramurals Pageant",
+      "eventname": "Coding Gym",
       "addressofEvent": "Gymnasium CJC",
       "purposeofEvent": "party",
       "facilityName": "Gymnasium",
-      "startofEvent": "2023-11-03T16:43",
-      "endofEvent": "2023-11-30T16:43",
+      "startofEvent": "2023-12-04T16:00:00",
+      "endofEvent": "2023-12-05T22:00:00",
       "status": "approved"
-    },{
-      "eventname": "IT Week",
-      "addressofEvent": "Gymnasium",
-      "purposeofEvent": "Get to know event",
-      "facilityName": "Coindre Grounds",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
-      "status": "pending"
     },
     {
-      "eventname": "General Assembly",
-      "addressofEvent": "Gymnasium",
-      "purposeofEvent": "Get to know event",
-      "facilityName": "EdTech Hall",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
-      "status": "denied"
-    },
-    {
-      "eventname": "E-Sports Fest",
-      "addressofEvent": "Gymnasium CJC",
-      "purposeofEvent": "party",
-      "facilityName": "Net Central",
-      "startofEvent": "2023-11-03T16:43",
-      "endofEvent": "2023-11-30T16:43",
-      "status": "approved"
-    },{
       "eventname": "Tropa Time",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "M116",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
-      "status": "pending"
+      "facilityName": "R108",
+      "startofEvent": "2023-10-19T10:00:00",
+      "endofEvent": "2023-10-20T18:00:00",
+      "status": "denied"
     },
     {
-      "eventname": "Computer Studies Extension",
+      "eventname": "Acquaintance Party",
       "addressofEvent": "Gymnasium",
       "purposeofEvent": "Get to know event",
-      "facilityName": "CLB 1",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
+      "facilityName": "CLB1",
+      "startofEvent": "2023-11-29T14:00:00",
+      "endofEvent": "2023-11-30T20:00:00",
+      "status": "denied"
+    },
+    {
+      "eventname": "Basketball Tournament",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "party",
+      "facilityName": "HE Hall",
+      "startofEvent": "2023-11-23T12:00:00",
+      "endofEvent": "2023-11-24T18:00:00",
       "status": "denied"
     },
     {
@@ -74,34 +58,234 @@
       "addressofEvent": "Gymnasium CJC",
       "purposeofEvent": "party",
       "facilityName": "M116",
-      "startofEvent": "2023-11-03T16:43",
-      "endofEvent": "2023-11-30T16:43",
+      "startofEvent": "2023-12-09T18:00:00",
+      "endofEvent": "2023-12-10T23:59:59",
       "status": "approved"
-    },{
-      "eventname": "Acquaintance Party",
-      "addressofEvent": "Gymnasium",
-      "purposeofEvent": "Get to know event",
-      "facilityName": "Open Court",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
-      "status": "pending"
     },
     {
-      "eventname": "Battle of Academic Wizards",
+      "eventname": "E-Sports Fest",
       "addressofEvent": "Gymnasium",
-      "purposeofEvent": "Get to know event",
-      "facilityName": "Ed Tech Hall",
-      "startofEvent": "2023-11-24T16:00",
-      "endofEvent": "2023-11-24T20:30",
+      "purposeofEvent": "party",
+      "facilityName": "R103",
+      "startofEvent": "2023-11-14T08:00:00",
+      "endofEvent": "2023-11-15T16:00:00",
       "status": "denied"
     },
     {
-      "eventname": "Coding Gym",
+      "eventname": "Acquaintance Party",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "CLB2",
+      "startofEvent": "2023-11-18T13:00:00",
+      "endofEvent": "2023-11-19T23:59:59",
+      "status": "denied"
+    },
+    {
+      "eventname": "Basketball Tournament",
       "addressofEvent": "Gymnasium CJC",
       "purposeofEvent": "party",
-      "facilityName": "Clb 2",
-      "startofEvent": "2023-11-03T16:43",
-      "endofEvent": "2023-11-30T16:43",
+      "facilityName": "M119",
+      "startofEvent": "2023-11-25T09:00:00",
+      "endofEvent": "2023-11-26T15:00:00",
+      "status": "approved"
+    },
+    {
+      "eventname": "IT Week",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "R110",
+      "startofEvent": "2023-11-17T14:00:00",
+      "endofEvent": "2023-11-18T22:00:00",
+      "status": "approved"
+    },
+    {
+      "eventname": "Battle of Academic Wizards",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "M118",
+      "startofEvent": "2023-10-19T16:00:00",
+      "endofEvent": "2023-10-20T23:59:59",
+      "status": "pending"
+    },
+    {
+      "eventname": "Computer Studies Extension",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "M117",
+      "startofEvent": "2023-11-07T14:00:00",
+      "endofEvent": "2023-11-08T22:00:00",
+      "status": "pending"
+    },
+    {
+      "eventname": "General Assembly",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "HE Hall",
+      "startofEvent": "2023-11-03T19:00:00",
+      "endofEvent": "2023-11-04T23:59:59",
+      "status": "denied"
+    },
+    {
+      "eventname": "E-Sports Fest",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "M116",
+      "startofEvent": "2023-11-04T12:00:00",
+      "endofEvent": "2023-11-05T18:00:00",
+      "status": "denied"
+    },
+    {
+      "eventname": "Festive Showcase",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "M119",
+      "startofEvent": "2023-11-22T16:00:00",
+      "endofEvent": "2023-11-23T23:59:59",
+      "status": "pending"
+    },
+    {
+      "eventname": "Art Exhibition",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "R103",
+      "startofEvent": "2023-11-08T10:00:00",
+      "endofEvent": "2023-11-09T18:00:00",
+      "status": "pending"
+    },
+    {
+      "eventname": "Dance Night",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "party",
+      "facilityName": "R108",
+      "startofEvent": "2023-11-15T20:00:00",
+      "endofEvent": "2023-11-16T23:59:59",
+      "status": "approved"
+    },
+    {
+      "eventname": "Science Fair",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "CLB1",
+      "startofEvent": "2023-11-26T14:00:00",
+      "endofEvent": "2023-11-27T20:00:00",
+      "status": "approved"
+    },
+    {
+      "eventname": "Music Festival",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "party",
+      "facilityName": "CLB2",
+      "startofEvent": "2023-12-01T18:00:00",
+      "endofEvent": "2023-12-02T23:59:59",
+      "status": "denied"
+    },
+    {
+      "eventname": "Chess Tournament",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "M116",
+      "startofEvent": "2023-11-10T12:00:00",
+      "endofEvent": "2023-11-11T18:00:00",
+      "status": "approved"
+    },
+    {
+      "eventname": "Food Festival",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "party",
+      "facilityName": "M117",
+      "startofEvent": "2023-11-21T20:00:00",
+      "endofEvent": "2023-11-22T23:59:59",
+      "status": "denied"
+    },
+    {
+      "eventname": "Debate Club",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "R110",
+      "startofEvent": "2023-11-05T16:00:00",
+      "endofEvent": "2023-11-06T22:00:00",
+      "status": "pending"
+    },
+    {
+      "eventname": "Movie Night",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "party",
+      "facilityName": "R103",
+      "startofEvent": "2023-11-09T20:00:00",
+      "endofEvent": "2023-11-10T23:59:59",
+      "status": "approved"
+    },
+    {
+      "eventname": "Tech Expo",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "HE Hall",
+      "startofEvent": "2023-11-06T14:00:00",
+      "endofEvent": "2023-11-07T22:00:00",
+      "status": "approved"
+    },
+    {
+      "eventname": "Charity Run",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "CLB1",
+      "startofEvent": "2023-11-13T09:00:00",
+      "endofEvent": "2023-11-14T17:00:00",
+      "status": "denied"
+    },
+    {
+      "eventname": "Fashion Show",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "party",
+      "facilityName": "R108",
+      "startofEvent": "2023-11-16T18:00:00",
+      "endofEvent": "2023-11-17T23:59:59",
+      "status": "denied"
+    },
+    {
+      "eventname": "Gaming Night",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "party",
+      "facilityName": "CLB2",
+      "startofEvent": "2023-11-30T20:00:00",
+      "endofEvent": "2023-12-01T23:59:59",
+      "status": "denied"
+    },
+    {
+      "eventname": "Leadership Summit",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "M119",
+      "startofEvent": "2023-11-27T16:00:00",
+      "endofEvent": "2023-11-28T22:00:00",
+      "status": "approved"
+    },
+    {
+      "eventname": "Robotics Expo",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "M118",
+      "startofEvent": "2023-10-20T12:00:00",
+      "endofEvent": "2023-10-21T18:00:00",
+      "status": "pending"
+    },
+    {
+      "eventname": "Networking Mixer",
+      "addressofEvent": "Gymnasium CJC",
+      "purposeofEvent": "party",
+      "facilityName": "M117",
+      "startofEvent": "2023-11-08T18:00:00",
+      "endofEvent": "2023-11-09T23:59:59",
+      "status": "pending"
+    },
+    {
+      "eventname": "Literary Festival",
+      "addressofEvent": "Gymnasium",
+      "purposeofEvent": "Get to know event",
+      "facilityName": "HE Hall",
+      "startofEvent": "2023-11-04T10:00:00",
+      "endofEvent": "2023-11-05T18:00:00",
       "status": "approved"
     }
+  
   ]
