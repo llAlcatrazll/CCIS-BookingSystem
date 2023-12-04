@@ -264,7 +264,9 @@ export default function Createbooking() {
                                     >
                                         Cancle
                                     </button>
-                                    <button>Submit</button>
+                                    <button onChange={handlesubmit}>
+                                        Submit
+                                    </button>
                                 </div>
                             </div>
                         )}
